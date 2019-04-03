@@ -1,0 +1,41 @@
+[package]
+name = "playground-rs"
+version = "0.1.0"
+authors = ["Prasanna Loganathar <pvl@prasannavl.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.25"
+tokio =  {version= "0.1.18", features = ["async-await-preview"] }
+structopt = "0.2.15"
+failure = "0.1.5"
+env_logger = "0.6.1"
+log = "0.4.6"
+itertools = "0.8.0"
+serde = "1.0.89"
+serde_json = "1.0.39"
+lazy_static = "1.3.0"
+chrono = "0.4.6"
+exitfailure = "0.5.1"
+clap = "2.32.0"
+rand = "0.6.5"
+time = "0.1.42"
+hyper = "0.12.25"
+tokio-threadpool = "0.1.12"
+rayon = "1.0.3"
+crossbeam = "0.7.1"
+parking_lot = "0.7.1"
+tokio-executor = "0.1.6"
+warp = { version = "0.1.14", features = ["tls"] }
+actix-web = { version = "0.7.18", features = ["rust-tls"] }
+actix = "0.7.9"
+tokio-tls = "0.2.1"
+native-tls = "0.2.2"
+quixutils = "0.6.0"
+tide = "0.0.5"
+tokio-async-await = "0.1.6"
+http = "0.1.16"
+http-service = "0.1.4"
+
+[replace]
+"tide:0.0.5" = { git = "https://github.com/prasannavl/tide" }
